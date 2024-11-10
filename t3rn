@@ -1,0 +1,13 @@
+wget https://github.com/t3rn/executor-release/releases/download/v0.22.0/executor-linux-v0.22.0.tar.gz&&
+gzip -d executor-linux-v0.22.0.tar.gz&&
+tar -xf executor-linux-v0.22.0.tar&&
+wget https://github.com/t3rn/executor-release/archive/refs/tags/v0.22.0.tar.gz&&
+gzip -d v0.22.0.tar.gz&&
+export NODE_ENV=testnet&&
+export LOG_LEVEL=debug&&
+export LOG_PRETTY=false&&
+export EXECUTOR_PROCESS_ORDERS=true
+export EXECUTOR_PROCESS_CLAIMS=true&&
+export PRIVATE_KEY_LOCAL=0&&
+export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,blast-sepolia,l1rn'
+
